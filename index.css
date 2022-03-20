@@ -1,0 +1,98 @@
+body {
+    font-family: tahoma;
+}
+
+.container {
+    margin: 0 auto;
+    width: 500px;
+    border: 2px solid gray;
+    height: 95vh;
+}
+
+header {
+    /* background-color: rgb(245, 206, 235); */
+    background-color: #694a6d;
+    display: flex;
+    align-items: center;
+}
+
+header .face {
+    width: 120px;
+    height: 120px;
+    margin: 20px;
+    border-radius: 100%;
+    border: 3px solid white;
+    background: red;
+    box-shadow: 5px 5px 20px -10px;
+}
+
+header .title {
+    flex: 1;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+header .title h1 {
+    border: 3px solid white;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    margin-bottom: 0;
+}
+
+header .title h2 {
+    background: #333;
+    color: white;
+    width: fit-content;
+    margin: -10px auto 0;
+    padding: 3px 40px;
+    font-size: 16px;
+}
+
+
+/*
+.name {
+    margin-left: 20px;
+    margin-right: 50px;
+    margin-top: 30px;
+    border: 2px solid white;
+    width: 300px;
+    padding-bottom: 40px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+div div {
+    display: block;
+}
+
+.profession {
+    color: white;
+    background-color: rgb(32, 30, 30);
+    border: 2px solid black;
+    width: 150px;
+    margin-left: 120px;
+    margin-top: -60px;
+    text-align: center;
+}
+
+.middle {
+    display: flex;
+}
+
+.left {
+    background-color: rgb(207, 203, 203);
+    width: 200px;
+}
+
+.ttl {
+    border: 2px dashed black;
+    width: 90px;
+}
+
+.right {
+    background-color: white;
+} */

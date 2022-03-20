@@ -1,12 +1,17 @@
 body {
     font-family: tahoma;
+    padding-block: 50px;
+}
+
+i {
+    display: inline !important;
+    margin: 0 3px 0 0;
 }
 
 .container {
     margin: 0 auto;
-    width: 500px;
+    width: 650px;
     border: 2px solid gray;
-    height: 95vh;
 }
 
 header {
@@ -50,49 +55,182 @@ header .title h2 {
     font-size: 16px;
 }
 
-
-/*
-.name {
-    margin-left: 20px;
-    margin-right: 50px;
-    margin-top: 30px;
-    border: 2px solid white;
-    width: 300px;
-    padding-bottom: 40px;
-    text-align: center;
-    color: aliceblue;
-    font-size: 50px;
-    font-weight: bold;
-}
-
-div div {
-    display: block;
-}
-
-.profession {
-    color: white;
-    background-color: rgb(32, 30, 30);
-    border: 2px solid black;
-    width: 150px;
-    margin-left: 120px;
-    margin-top: -60px;
-    text-align: center;
-}
-
-.middle {
+.container main {
     display: flex;
+    height: 50%;
 }
 
-.left {
-    background-color: rgb(207, 203, 203);
-    width: 200px;
+.container main > .left {
+    flex: 1.1;
+    padding: 30px;
+    background: #eee;
 }
 
-.ttl {
-    border: 2px dashed black;
-    width: 90px;
+.container main > .left .title {
+    font-size: .9rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    border: 3px dashed #694a6d;
 }
 
-.right {
-    background-color: white;
+.container main > .left .box {
+    font-size: .8rem;
+
+}
+
+.container main > .left .box p {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.container main > .left .box h3 {
+    text-align: center;
+}
+
+.container main > .left .contact address {
+    margin: 10px 0;
+}
+
+.container main > .left .contact address i {
+    color: #694a6d;
+}
+
+.progress {
+    width: 100%;
+    height: 12px;
+    background: linear-gradient(to right, #694a6d 80%, #DDD 80%);
+    border-radius: 0 100px 100px 0;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.progress.two {
+    background: linear-gradient(to right, #694a6d 60%, #DDD 60%);
+}
+
+.progress.three {
+    background: linear-gradient(to right, #694a6d 90%, #DDD 20%);
+}
+
+.progress:before {
+    content: "";
+    border: 10px solid;
+    border-color: #694a6d #694a6d #694a6d #eee;
+    position: absolute;
+    left: -10px;
+    top: -5px;
+}
+
+.container main > .left .box a {
+    color: #694a6d;
+    text-decoration: none;
+    font-size: .75rem;
+    display: block;
+    transition: .3s;
+    /* border: 2px solid transparent; */
+    margin: 5px 0;
+    /* padding: 4px; */
+}
+
+.container main > .left .box a:hover {
+    color: #200024;
+    text-decoration: underline;
+    /* border: 2px solid #694a6d; */
+}
+
+.container main > .right {
+    flex: 3;
+    padding: 30px;
+}
+
+.container main .right .title {
+    text-align: center;
+    font-size: 1.1rem;
+    background: #333;
+    color: white;
+    width: fit-content;
+    margin-inline: auto;
+    padding: 10px 20px;
+}
+
+.container main .right .work .a_work {
+    display: flex;
+    margin-block: 20px;
+}
+
+.container main .right .work .a_work h2 {
+    margin: 0;
+}
+/* 
+.container main .right .work .a_work .left {
+    flex: 1;
 } */
+
+.container main .left span.date {
+    font-size: .8rem;
+    position: relative;
+}
+
+.container main .left span.date::before{
+    content: "";
+    position: absolute;
+    border: 5px solid;
+    border-color: transparent transparent transparent #694a6d;
+    left: -10px;
+    top: -50%;
+    margin-top: 10px;
+}
+
+.container main .left h3 {
+    font-size: .7rem;
+    color: #aaa;
+    margin-left: -10px;
+}
+
+.container main .right .work .a_work .right {
+    flex: 3;
+    margin-left: 10px;
+}
+
+.container main .right .work .a_work .right .brunchtitle {
+    font-size: .9rem;
+}
+
+.container main .right .work .a_work .right p {
+    margin: 0;
+    font-size: .7rem;
+}
+
+.edu {
+    margin-top: 50px;
+}
+
+.container main .right .langs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container main .right .langs .lang {
+    background: #694a6d;
+    color: white;
+    flex: 1;
+    margin-left: 10px;
+    border-radius: 100px;
+    padding: 5px 0px;
+    text-align: center;
+    position: relative;
+}
+.container main .right .langs .lang::before {
+    content: "4A";
+    position: absolute;
+    left: -3px;
+    width: 30px;
+    height: 100%;
+    border-radius: 100px;
+    border: 3px solid white;
+    top: 50%;
+    transform: translateY(-50%);
+    display: grid;
+    place-items: center;
+}
